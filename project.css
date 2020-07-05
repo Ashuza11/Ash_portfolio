@@ -1,7 +1,7 @@
 /* the body */
 body
 {
-    background-image: url("/MyWebpage/img/7.jpg");
+    background-image: url("mycover.jpg");
     background-size: cover;
     line-height: 1.6em;
     margin: 0;
