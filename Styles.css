@@ -16,7 +16,7 @@ body
 .container
 {
   width: 85%;
-  margin: 0;
+  margin: auto;
   overflow: hidden;
   opacity: .8;
 }
