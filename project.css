@@ -1,8 +1,7 @@
 /* the body */
 body
 {
-    background-image: url("mycover.jpg");
-    background-size: cover;
+    background: url("mycover.jpg") fixed center;
     line-height: 1.6em;
     margin: 0;
     background-repeat: no-repeat;
