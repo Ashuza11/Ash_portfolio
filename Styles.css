@@ -2,116 +2,178 @@
 Styles.css
 
 By Albin.
-*/   
+*/
 /* Page Style */
-body
-{
+body {
   background-color: grey;
   color: #555555;
   font: normal 16px Arial, Helvetica, sans-serif;
   line-height: 1.6em;
   margin: 0;
-
 }
-.container
-{
+.container {
   width: 85%;
   margin: auto;
   overflow: hidden;
-  opacity: .8;
+  opacity: 0.8;
 }
-.logo
-{
+.logo {
   margin: auto;
 }
 /* Header */
-#main-header
-{
+#main-header {
   color: #ffff;
   font: italic 20px tahoma;
 }
-/* Navbar */
-#navbar
-{
+/* Nav-bar styles */
+* {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
-  background-color:#333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-#navbar ul{
-  padding: 0;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: Tahoma;
+  background-color: #5d4954;
+}
+.logo {
+  color: honeydew;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font: italic 20px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+}
+.nav-links li {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
-#navbar li{
-  display: inline-block;
-  padding: 0px 20px;
-}
-#navbar a{
-  color:#fff;
+.nav-links a {
+  color: white;
   text-decoration: none;
-  font-size: 18px;
-  padding-right: 20px;
-  margin-bottom: 30px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
 }
-#navbar li a:hover{
-  color: green;
+.burger {
+  display: none;
+  cursor: pointer;
 }
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Fixing the .nav-links */
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #5d4954;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* ShowCase */
-#showcase
-{
+#showcase {
   background-color: rgba(52, 52, 235, 0.876);
   background-position: center right;
   min-height: 352px;
   text-align: center;
   margin-bottom: 30px;
 }
-#showcase h2{
+#showcase h2 {
   color: #fff;
   font-weight: 800;
   font-style: italic;
   font-family: Tahoma;
 }
 /* Page content */
-#main
-{
+#main {
   text-align: center;
   color: #fff;
- font-weight: 800;
+  font-weight: 800;
 }
-.introduction{
+.introduction {
   font-weight: 800;
   font-family: Tahoma;
   font-style: italic;
   font-size: 25px;
 }
-.center{
+.center {
   margin: auto;
 }
 /* footer */
-#main-footer
-{
+#main-footer {
   background: #333;
   color: #fff;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  opacity: .8;
+  opacity: 0.8;
   font: italic 16px Tahoma;
-} 
+}
 /* Adjustment */
-@media(max-width:600px)
-{
-  #main{
+@media (max-width: 600px) {
+  #main {
     width: 100%;
     float: none;
   }
 
-  #sidebar{
+  #sidebar {
     width: 100%;
     float: none;
   }
