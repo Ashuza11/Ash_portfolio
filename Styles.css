@@ -14,16 +14,7 @@ body {
 .container {
   width: 85%;
   margin: auto;
-  overflow: hidden;
-  opacity: 0.8;
-}
-.logo {
-  margin: auto;
-}
-/* Header */
-#main-header {
-  color: #ffff;
-  font: italic 20px tahoma;
+  overflow: visible;
 }
 /* Nav-bar styles */
 * {
@@ -135,6 +126,7 @@ nav {
   min-height: 352px;
   text-align: center;
   margin-bottom: 30px;
+  overflow: visible;
 }
 #showcase h2 {
   color: #fff;
@@ -170,11 +162,6 @@ nav {
 /* Adjustment */
 @media (max-width: 600px) {
   #main {
-    width: 100%;
-    float: none;
-  }
-
-  #sidebar {
     width: 100%;
     float: none;
   }
