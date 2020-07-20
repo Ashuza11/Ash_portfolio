@@ -16,6 +16,8 @@ body {
   margin: auto;
   overflow: visible;
 }
+#Profilpicture {
+  width: 100%;
 /* Nav-bar styles */
 * {
   margin: 0px;
@@ -65,9 +67,6 @@ nav {
 
 /* Fixing the .nav-links */
 @media screen and (max-width: 1024px) and (min-width: 768px) {
-  #Profilpicture {
-    width: 100%;
-  }
   .nav-links {
     width: 80%;
     opacity: 0.8;
