@@ -78,7 +78,7 @@ nav {
     overflow-x: hidden;
   }
   .nav-links {
-    position: fixed;
+    position: absolute;
     right: 0px;
     height: 92vh;
     top: 8vh;
@@ -87,6 +87,7 @@ nav {
     flex-direction: column;
     align-items: center;
     width: 50%;
+    opacity: 0.8;
   }
   .nav-links li {
     opacity: 0;
