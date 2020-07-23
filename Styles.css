@@ -5,20 +5,23 @@ By Albin.
 */
 /* Page Style */
 body {
-  background-color: grey;
-  color: #555555;
-  font: normal 16px Arial, Helvetica, sans-serif;
-  line-height: 1.6em;
   margin: 0;
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: white;
+  background-color: #555;
+  margin: 0px;
 }
 .container {
   width: 85%;
   margin: auto;
   overflow: visible;
 }
-#Profilpicture {
-  width: 100%;
-}
+
 /* Nav-bar styles */
 * {
   margin: 0px;
@@ -70,11 +73,13 @@ nav {
 @media screen and (max-width: 1024px) and (min-width: 768px) {
   .nav-links {
     width: 80%;
-    opacity: 0.8;
   }
 }
 
 @media screen and (max-width: 768px) {
+  #Profilpicture {
+    width: 100%;
+  }
   body {
     overflow-x: hidden;
   }
@@ -87,7 +92,8 @@ nav {
     display: none;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    opacity: 0.9;
   }
   .nav-links li {
     opacity: 0;
