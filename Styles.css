@@ -134,8 +134,9 @@ nav {
   background-position: center right;
   min-height: 352px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   overflow: visible;
+  margin-top: 20px;
 }
 #showcase h2 {
   color: #fff;
