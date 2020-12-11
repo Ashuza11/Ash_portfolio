@@ -21,7 +21,11 @@ body {
   margin: auto;
   overflow: visible;
 }
-
+/* Fix the height with the section*/
+section.hieght
+{
+    height: 100vh;
+}
 /* Nav-bar styles */
 * {
   margin: 0px;
@@ -146,6 +150,8 @@ nav {
 }
 /* Page content */
 #main {
+  background-color: #555;
+  opacity: 0.8;
   text-align: center;
   color: #fff;
   font-weight: 800;
@@ -176,3 +182,4 @@ nav {
     float: none;
   }
 }
+

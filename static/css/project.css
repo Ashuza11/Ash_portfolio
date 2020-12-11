@@ -1,12 +1,4 @@
-/* the body */
-body
-{
-    background: url("mycover.jpg") fixed center;
-    line-height: 1.6em;
-    margin: 0;
-    background-repeat: no-repeat;
 
-}
 /* project form */
 .pro-form
 {
@@ -19,6 +11,17 @@ body
     border-radius: 10px;
 
 }
+/* the body */
+body
+{
+    background: url("/static/img/mycover.jpg") fixed center;
+    line-height: 1.6em;
+    margin: 0;
+    background-repeat: no-repeat;
+
+}
+
+
 .title
 {
     font:  italic 20px Arial, Tahoma;

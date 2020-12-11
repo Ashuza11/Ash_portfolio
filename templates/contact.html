@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block title %}
+    Contact
+{% endblock %}
+
+{% block body %}
+        <section class="hieght">
+            <div class="c_form">
+                <h2>Send Me a Massege</h2>
+                <div id="error_message"></div>
+                <form id="myForm" onsubmit="return validation();">  
+                    <div class="input_field">
+                        <input type="text" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="input_field">
+                        <input type="text" id="phone" placeholder="Enter your Phone Number">
+                    </div>
+                    <div class="input_field">
+                        <input type="email" id="email" placeholder="Enter your E-mail">
+                    </div>
+                    <div class="input_field">
+                        <textarea id="message"  clos="30" placeholder="Message"></textarea>
+                    </div>
+                    <div class="btn">
+                        <input type="submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+{% endblock %}
